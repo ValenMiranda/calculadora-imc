@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+function calculadora(){
+	var peso = document.getElementById("kilogramos").value;
+	var altura = document.getElementById("centimetros").value;
+	var resultado;
+
+	if(peso!="" && altura!=""){
+		altura = parseInt(altura)/100;
+    	resultado = peso/(altura*altura);
+     	alert(resultado.toFixed(2));
+	}
+}
+=======
 function calcularIMC(){
 	var peso = leerInput("kilogramos");
 	var altura = leerInput("centimetros");
@@ -29,3 +42,5 @@ function IMC(peso, altura){
 	return (peso/(Math.pow(EnteroEntre100(altura),2))).toFixed(2);
 }
 
+
+>>>>>>> refactorizado
